@@ -2,6 +2,16 @@
 #include<fstream>
 using namespace std;
 
+void interview()
+{
+    cout<<"\n-----Interview Process-----\n";
+    cout<<"\nArrange Candidate Meeting\n";
+    cout<<"\nConduct pre-interview\n";
+    cout<<"\nSetup interview questions\n";
+    cout<<"\nConduct interview\n";
+    postInterview();
+}
+
 void hiringProcess()
 {
     cout<<"\n-----Hiring Process-----\n";
@@ -16,8 +26,7 @@ void hiringProcess()
         cin>>suit;
         if(suit=="yes")
         {
-            cout<<"yes";
-            // interview();
+            interview();
         }
         else
         {
