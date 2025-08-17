@@ -2,6 +2,25 @@
 #include<fstream>
 using namespace std;
 
+void postInterview()
+{
+    cout<<"\n-------Post Interview Process-------\n";
+    cout<<"\nDoes the candidate have good refernce? (yes/no)\n";
+    string post;
+    cin>>post;
+    if(post=="yes")
+    {
+        cout<<"\nSelect the candidate\n";
+        cout<<"\nEvaluate pay rate\n";
+        cout<<"\nSend employement offer\n";
+        offerConfirmation();
+    }
+    else
+    {
+        cout<<"\nCandidate not hired\n";
+    }
+}
+
 void newApplications()
 {
     cout<<"\n------New Applications Plan------\n";
