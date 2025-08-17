@@ -2,6 +2,22 @@
 #include<fstream>
 using namespace std;
 
+void offerConfirmation()
+{
+    cout<<"\n------Offer Confirmation------\n";
+    cout<<"\nDid the candidate confirm the offer? (yes/no)\n";
+    string offer;
+    cin>>offer;
+    if(offer=="yes")
+    {
+        cout<<"\nCandidate hired\n";
+    }
+    else
+    {
+        cout<<"\nCandidate not hired\n";
+    }
+}
+
 void postInterview()
 {
     cout<<"\n-------Post Interview Process-------\n";
