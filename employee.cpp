@@ -2,6 +2,24 @@
 #include<fstream>
 using namespace std;
 
+void newApplications()
+{
+    cout<<"\n------New Applications Plan------\n";
+    cout<<"\nDevelop recruitment plan\n";
+    cout<<"\nPlan advertisements\n";
+    cout<<"\nCollect applications\n";
+    cout<<"\nAny qualified resumes? (yes/no)\n";
+    string qua;
+    cin>>qua;
+    if(qua=="yes")
+    {
+        interview();
+    }
+    else
+    {
+        cout<<"\nCandidate not hired\n";
+    }
+}
 
 void interview()
 {
