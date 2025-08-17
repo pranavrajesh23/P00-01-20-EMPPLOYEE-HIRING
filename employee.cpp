@@ -2,6 +2,7 @@
 #include<fstream>
 using namespace std;
 
+
 void interview()
 {
     cout<<"\n-----Interview Process-----\n";
@@ -10,6 +11,23 @@ void interview()
     cout<<"\nSetup interview questions\n";
     cout<<"\nConduct interview\n";
     postInterview();
+}
+
+void reviewCandidate()
+{
+    cout<<"\n-------Review Process------\n";
+    cout<<"\nReview existing resumes on the file\n";
+    cout<<"\nAny suitable candidate? (yes/no)\n";
+        string suit;
+        cin>>suit;
+        if(suit=="yes")
+        {
+            interview();
+        }
+        else
+        {
+            newApplications();
+        }
 }
 
 void hiringProcess()
@@ -30,8 +48,7 @@ void hiringProcess()
         }
         else
         {
-            cout<<"no";
-            // reviewCandidate();
+            reviewCandidate();
         }
     }
     else
